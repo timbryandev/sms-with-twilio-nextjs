@@ -1,0 +1,11 @@
+.error {
+  color: var(--code);
+  text-align: right;
+  font-weight: bold;
+}
+
+.success {
+  color: #8bc34a;
+  text-align: right;
+  font-weight: bold;
+}
