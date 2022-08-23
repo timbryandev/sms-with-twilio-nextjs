@@ -37,7 +37,7 @@ export default function sendMessage(req: NextApiRequest, res: NextApiResponse) {
   }
 
   if (validate.phone(phone) === false) {
-    res.status(400).json({
+    res.status(422).json({
       success: false,
       error: 'There is an issue with your chosen number.',
     })
@@ -45,7 +45,7 @@ export default function sendMessage(req: NextApiRequest, res: NextApiResponse) {
   }
 
   if (validate.message(message) === false) {
-    res.status(400).json({
+    res.status(422).json({
       success: false,
       error: 'There is an issue with your message.',
     })
